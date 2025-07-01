@@ -1,10 +1,10 @@
 bid_amount = {}
 
-more_bids= "Yes"
-while more_bids== "Yes":
+more_bids= "yes"
+while more_bids== "yes":
     name= input("What is your name? ")
     bid_amount[name] = int(input("What is your bid? "))
-    more_bids= input("Are There any Other Bidders? Type Yes or No: ")
+    more_bids= input("Are There any Other Bidders? Type Yes or No: ").lower()
     print("\n" * 100)
 
 max_bid= 0
